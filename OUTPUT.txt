@@ -1,0 +1,799 @@
+sat22@sat-22:~/Desktop/BSaLTic $ ./demo.sh 
+Parameters: mode demo, timelimit 600sec, memory 5Go, ltlspec all, selector all heuristic, benchmark repository ./bench
+
+##############################################################
+##############        RUN DEMO BENCHMARK        ##############   
+##############################################################
+
+...Run LTL safety instances.
+
+   krebs.3_guarantee_0.smv_k80.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./krebs.3_guarantee_0.smv_k80.dimacs
+c ltl=safety, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(safety)
+c used protection: Explicit storage.
+c TIME SOLVING : 600.115
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     910108 |   1042939561 |       1979 |    1865972 |     405 |
+s UNKNOWN
+c TOTAL RESOLUTION TIME : 601.133
+c Run BSaLTic done successfully.
+c Done.
+   krebs.3_guarantee_0.smv_k80.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./krebs.3_guarantee_0.smv_k80.dimacs
+c ltl=safety, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(safety)
+c used protection: Database Reduction.
+c TIME SOLVING : 600.659
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |    1004738 |   1099470109 |       2046 |    1904624 |     405 |
+s UNKNOWN
+c TOTAL RESOLUTION TIME : 611.582
+c Run BSaLTic done successfully.
+c Done.
+   krebs.3_guarantee_0.smv_k80.dimacs with traditional MapleCOMSPS solver......
+c filename ./krebs.3_guarantee_0.smv_k80.dimacs
+c ltl=safety, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(safety)
+c used protection: None.
+c TIME SOLVING : 600.667
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     977803 |   1136117338 |       2046 |    1900774 |     405 |
+s UNKNOWN
+c TOTAL RESOLUTION TIME : 628.973
+c Run BSaLTic done successfully.
+c Done.
+   bridge.1_k4000.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./bridge.1_k4000.dimacs
+c ltl=safety, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(safety)
+./benchmarks.sh: line 106:  3043 Killed                  ./bsaltic -no-model -ltl=$ltlname -selector="hf" -t=$timeout -protect="e" -max-memory=$memory -o=$csv_result $tmp_file
+   bridge.1_k4000.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./bridge.1_k4000.dimacs
+c ltl=safety, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(safety)
+./benchmarks.sh: line 106:  3055 Killed                  ./bsaltic -no-model -ltl=$ltlname -selector="hf" -t=$timeout -protect="dr" -r=4 -max-memory=$memory -o=$csv_result $tmp_file
+   bridge.1_k4000.dimacs with traditional MapleCOMSPS solver......
+c filename ./bridge.1_k4000.dimacs
+c ltl=safety, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(safety)
+./benchmarks.sh: line 106:  3058 Killed                  ./bsaltic -no-model -t=$timeout -ltl=$ltlname -max-memory=$memory -o=$csv_result $tmp_file
+   bridge.2_k1600.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./bridge.2_k1600.dimacs
+c ltl=safety, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(safety)
+c used protection: Explicit storage.
+c [355.63] c Winner: 0
+c TIME SOLVING : 349.789
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     990156 |    643188184 |       2046 |    2826829 |    3182 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 353.413
+c Run BSaLTic done successfully.
+c Done.
+   bridge.2_k1600.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./bridge.2_k1600.dimacs
+c ltl=safety, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(safety)
+c used protection: Database Reduction.
+c [342.27] c Winner: 0
+c TIME SOLVING : 337.161
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     884899 |    611638244 |       1916 |    2234112 |    3182 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 340.64
+c Run BSaLTic done successfully.
+c Done.
+   bridge.2_k1600.dimacs with traditional MapleCOMSPS solver......
+c filename ./bridge.2_k1600.dimacs
+c ltl=safety, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(safety)
+c used protection: None.
+c [466.30] c Winner: 0
+c TIME SOLVING : 461.087
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |    1320789 |    904626154 |       2557 |    2289928 |    3183 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 464.597
+c Run BSaLTic done successfully.
+c Done.
+...Run LTL guarantee instances.
+
+   bopdp.2_k60.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./bopdp.2_k60.dimacs
+c ltl=guarantee, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(guarantee)
+c used protection: Explicit storage.
+c [21.41] c Winner: 0
+c TIME SOLVING : 21.1695
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      99582 |     75492468 |        255 |     405945 |     274 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 21.3095
+c Run BSaLTic done successfully.
+c Done.
+   bopdp.2_k60.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./bopdp.2_k60.dimacs
+c ltl=guarantee, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(guarantee)
+c used protection: Database Reduction.
+c [24.79] c Winner: 0
+c TIME SOLVING : 24.5457
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     118596 |     88952373 |        317 |     489950 |     338 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 24.6652
+c Run BSaLTic done successfully.
+c Done.
+   bopdp.2_k60.dimacs with traditional MapleCOMSPS solver......
+c filename ./bopdp.2_k60.dimacs
+c ltl=guarantee, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(guarantee)
+c used protection: None.
+c [46.42] c Winner: 0
+c TIME SOLVING : 46.1868
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     188696 |    154410488 |        509 |     643760 |     367 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 46.3005
+c Run BSaLTic done successfully.
+c Done.
+   bopdp.1.1_k60.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./bopdp.1.1_k60.dimacs
+c ltl=guarantee, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(guarantee)
+c used protection: Explicit storage.
+c [32.66] c Winner: 0
+c TIME SOLVING : 32.3549
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     128788 |    105585556 |        349 |     498677 |     278 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 32.5182
+c Run BSaLTic done successfully.
+c Done.
+   bopdp.1.1_k60.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./bopdp.1.1_k60.dimacs
+c ltl=guarantee, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(guarantee)
+c used protection: Database Reduction.
+c [44.71] c Winner: 0
+c TIME SOLVING : 44.4077
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     158880 |    141380670 |        430 |     595812 |     278 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 44.5462
+c Run BSaLTic done successfully.
+c Done.
+   bopdp.1.1_k60.dimacs with traditional MapleCOMSPS solver......
+c filename ./bopdp.1.1_k60.dimacs
+c ltl=guarantee, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(guarantee)
+c used protection: None.
+c [33.35] c Winner: 0
+c TIME SOLVING : 33.0824
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     138130 |    108605815 |        381 |     536089 |     278 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 33.2172
+c Run BSaLTic done successfully.
+c Done.
+   schedule_world.1_neg.smv_k200.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./schedule_world.1_neg.smv_k200.dimacs
+c ltl=guarantee, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(guarantee)
+c used protection: Explicit storage.
+c [35.34] c Winner: 0
+c TIME SOLVING : 34.8301
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     226436 |     99283935 |        511 |     731018 |     461 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 35.147
+c Run BSaLTic done successfully.
+c Done.
+   schedule_world.1_neg.smv_k200.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./schedule_world.1_neg.smv_k200.dimacs
+c ltl=guarantee, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(guarantee)
+c used protection: Database Reduction.
+c [14.79] c Winner: 0
+c TIME SOLVING : 14.3475
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      89227 |     38390765 |        254 |     337812 |     397 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 14.6041
+c Run BSaLTic done successfully.
+c Done.
+   schedule_world.1_neg.smv_k200.dimacs with traditional MapleCOMSPS solver......
+c filename ./schedule_world.1_neg.smv_k200.dimacs
+c ltl=guarantee, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(guarantee)
+c used protection: None.
+c [97.06] c Winner: 0
+c TIME SOLVING : 96.608
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     583945 |    296102510 |       1244 |    1526822 |     461 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 96.8408
+c Run BSaLTic done successfully.
+c Done.
+...Run LTL obligation instances.
+
+   adding.1_obligation_0.smv_k80.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./adding.1_obligation_0.smv_k80.dimacs
+c ltl=obligation, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(obligation)
+c used protection: Explicit storage.
+c [156.66] c Winner: 0
+c TIME SOLVING : 156.452
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     681430 |    460505491 |       1482 |    1065926 |     316 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 156.518
+c Run BSaLTic done successfully.
+c Done.
+   adding.1_obligation_0.smv_k80.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./adding.1_obligation_0.smv_k80.dimacs
+c ltl=obligation, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(obligation)
+c used protection: Database Reduction.
+c [201.01] c Winner: 0
+c TIME SOLVING : 200.734
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     789497 |    512672989 |       1668 |    1218391 |     340 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 200.806
+c Run BSaLTic done successfully.
+c Done.
+   adding.1_obligation_0.smv_k80.dimacs with traditional MapleCOMSPS solver......
+c filename ./adding.1_obligation_0.smv_k80.dimacs
+c ltl=obligation, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(obligation)
+c used protection: None.
+c [230.64] c Winner: 0
+c TIME SOLVING : 230.398
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     906213 |    612985433 |       1978 |    1374228 |     279 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 230.455
+c Run BSaLTic done successfully.
+c Done.
+   dpd75_obligation_0.smv_k100.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./dpd75_obligation_0.smv_k100.dimacs
+c ltl=obligation, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(obligation)
+c used protection: Explicit storage.
+c [23.07] c Winner: 0
+c TIME SOLVING : 21.2251
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      42742 |     51632740 |        127 |    1170423 |     844 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 22.3702
+c Run BSaLTic done successfully.
+c Done.
+   dpd75_obligation_0.smv_k100.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./dpd75_obligation_0.smv_k100.dimacs
+c ltl=obligation, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(obligation)
+c used protection: Database Reduction.
+c [60.56] c Winner: 0
+c TIME SOLVING : 58.9172
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     146818 |    190151939 |        382 |    3456992 |     844 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 59.8987
+c Run BSaLTic done successfully.
+c Done.
+   dpd75_obligation_0.smv_k100.dimacs with traditional MapleCOMSPS solver......
+c filename ./dpd75_obligation_0.smv_k100.dimacs
+c ltl=obligation, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(obligation)
+c used protection: None.
+c [48.04] c Winner: 0
+c TIME SOLVING : 46.5362
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     121591 |    151151233 |        318 |    2582630 |     844 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 47.4721
+c Run BSaLTic done successfully.
+c Done.
+   queue_obligation_0.smv_k400.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./queue_obligation_0.smv_k400.dimacs
+c ltl=obligation, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(obligation)
+c used protection: Explicit storage.
+c [79.34] c Winner: 0
+c TIME SOLVING : 78.9772
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |    1394370 |    184904813 |       2684 |    3214624 |     426 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 79.187
+c Run BSaLTic done successfully.
+c Done.
+   queue_obligation_0.smv_k400.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./queue_obligation_0.smv_k400.dimacs
+c ltl=obligation, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(obligation)
+c used protection: Database Reduction.
+c [81.67] c Winner: 0
+c TIME SOLVING : 81.2632
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |    1367009 |    182247725 |       2593 |    3134917 |     426 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 81.4713
+c Run BSaLTic done successfully.
+c Done.
+   queue_obligation_0.smv_k400.dimacs with traditional MapleCOMSPS solver......
+c filename ./queue_obligation_0.smv_k400.dimacs
+c ltl=obligation, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(obligation)
+c used protection: None.
+c [16.20] c Winner: 0
+c TIME SOLVING : 15.8492
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     275620 |     31707194 |        639 |     810107 |     426 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 16.0445
+c Run BSaLTic done successfully.
+c Done.
+...Run LTL recurrence instances.
+
+   dme2_persistence_0.smv_k400.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./dme2_persistence_0.smv_k400.dimacs
+c ltl=recurrence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(recurrence)
+c used protection: Explicit storage.
+c [26.10] c Winner: 0
+c TIME SOLVING : 25.944
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     462279 |     52211049 |       1023 |    1767676 |     300 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 26.0206
+c Run BSaLTic done successfully.
+c Done.
+   dme2_persistence_0.smv_k400.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./dme2_persistence_0.smv_k400.dimacs
+c ltl=recurrence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(recurrence)
+c used protection: Database Reduction.
+c [50.20] c Winner: 0
+c TIME SOLVING : 50.0185
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     653651 |     83742946 |       1404 |    2517789 |     360 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 50.1073
+c Run BSaLTic done successfully.
+c Done.
+   dme2_persistence_0.smv_k400.dimacs with traditional MapleCOMSPS solver......
+c filename ./dme2_persistence_0.smv_k400.dimacs
+c ltl=recurrence, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(recurrence)
+c used protection: None.
+c [33.51] c Winner: 0
+c TIME SOLVING : 33.3483
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     453688 |     52091235 |       1022 |    1754067 |     238 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 33.4186
+c Run BSaLTic done successfully.
+c Done.
+   dph35_persistence_0.smv_k40.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./dph35_persistence_0.smv_k40.dimacs
+c ltl=recurrence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(recurrence)
+c used protection: Explicit storage.
+c [38.10] c Winner: 0
+c TIME SOLVING : 37.8192
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      95597 |    123584527 |        255 |    1353485 |     371 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 38.0007
+c Run BSaLTic done successfully.
+c Done.
+   dph35_persistence_0.smv_k40.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./dph35_persistence_0.smv_k40.dimacs
+c ltl=recurrence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(recurrence)
+c used protection: Database Reduction.
+c [163.93] c Winner: 0
+c TIME SOLVING : 163.532
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     377267 |    457225115 |        893 |    3909106 |     576 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 163.741
+c Run BSaLTic done successfully.
+c Done.
+   dph35_persistence_0.smv_k40.dimacs with traditional MapleCOMSPS solver......
+c filename ./dph35_persistence_0.smv_k40.dimacs
+c ltl=recurrence, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(recurrence)
+c used protection: None.
+c [78.82] c Winner: 0
+c TIME SOLVING : 78.4908
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     137488 |    202814612 |        380 |    2060682 |     497 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 78.6735
+c Run BSaLTic done successfully.
+c Done.
+   prod-cons_neg.smv_k800.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./prod-cons_neg.smv_k800.dimacs
+c ltl=recurrence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(recurrence)
+c used protection: Explicit storage.
+c [34.36] c Winner: 0
+c TIME SOLVING : 33.9225
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     336179 |     84025274 |        781 |    4993464 |     355 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 34.1986
+c Run BSaLTic done successfully.
+c Done.
+   prod-cons_neg.smv_k800.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./prod-cons_neg.smv_k800.dimacs
+c ltl=recurrence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(recurrence)
+c used protection: Database Reduction.
+c [45.24] c Winner: 0
+c TIME SOLVING : 44.723
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     468343 |    116378411 |       1023 |    5983458 |     371 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 44.9892
+c Run BSaLTic done successfully.
+c Done.
+   prod-cons_neg.smv_k800.dimacs with traditional MapleCOMSPS solver......
+c filename ./prod-cons_neg.smv_k800.dimacs
+c ltl=recurrence, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(recurrence)
+c used protection: None.
+c [32.85] c Winner: 0
+c TIME SOLVING : 32.4181
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     303792 |     79862908 |        739 |    5076469 |     355 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 32.6689
+c Run BSaLTic done successfully.
+c Done.
+...Run LTL reactivity instances.
+
+   msmie.3_reactivity_0.smv_k80.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./msmie.3_reactivity_0.smv_k80.dimacs
+c ltl=reactivity, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(reactivity)
+c used protection: Explicit storage.
+c [52.71] c Winner: 0
+c TIME SOLVING : 52.2054
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     118881 |    148728322 |        318 |     490134 |     494 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 52.5491
+c Run BSaLTic done successfully.
+c Done.
+   msmie.3_reactivity_0.smv_k80.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./msmie.3_reactivity_0.smv_k80.dimacs
+c ltl=reactivity, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(reactivity)
+c used protection: Database Reduction.
+c [20.82] c Winner: 0
+c TIME SOLVING : 20.3537
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      47052 |     55309839 |        141 |     225899 |     384 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 20.6853
+c Run BSaLTic done successfully.
+c Done.
+   msmie.3_reactivity_0.smv_k80.dimacs with traditional MapleCOMSPS solver......
+c filename ./msmie.3_reactivity_0.smv_k80.dimacs
+c ltl=reactivity, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(reactivity)
+c used protection: None.
+c [72.37] c Winner: 0
+c TIME SOLVING : 71.8921
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     147055 |    213437115 |        382 |     594796 |     494 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 72.2324
+c Run BSaLTic done successfully.
+c Done.
+   gigamax_reactivity_0.smv_k80.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./gigamax_reactivity_0.smv_k80.dimacs
+c ltl=reactivity, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(reactivity)
+c used protection: Explicit storage.
+c [64.92] c Winner: 0
+c TIME SOLVING : 64.3365
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |       1103 |       633626 |          7 |     282944 |     337 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 64.7043
+c Run BSaLTic done successfully.
+c Done.
+   gigamax_reactivity_0.smv_k80.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./gigamax_reactivity_0.smv_k80.dimacs
+c ltl=reactivity, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(reactivity)
+c used protection: Database Reduction.
+c [65.88] c Winner: 0
+c TIME SOLVING : 65.2177
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |       1103 |       633626 |          7 |     282944 |     337 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 65.6334
+c Run BSaLTic done successfully.
+c Done.
+   gigamax_reactivity_0.smv_k80.dimacs with traditional MapleCOMSPS solver......
+c filename ./gigamax_reactivity_0.smv_k80.dimacs
+c ltl=reactivity, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(reactivity)
+c used protection: None.
+c [65.89] c Winner: 0
+c TIME SOLVING : 65.3594
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |       1103 |       633626 |          7 |     282944 |     337 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 65.7149
+c Run BSaLTic done successfully.
+c Done.
+   Problem1_77_k100.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./Problem1_77_k100.dimacs
+c ltl=reactivity, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(reactivity)
+c used protection: Explicit storage.
+c [50.06] c Winner: 0
+c TIME SOLVING : 47.43
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      17144 |     18668973 |         63 |    1852955 |     951 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 49.1454
+c Run BSaLTic done successfully.
+c Done.
+   Problem1_77_k100.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./Problem1_77_k100.dimacs
+c ltl=reactivity, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(reactivity)
+c used protection: Database Reduction.
+c [49.39] c Winner: 0
+c TIME SOLVING : 47.1246
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      18663 |     19773624 |         63 |    1879556 |     951 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 48.4893
+c Run BSaLTic done successfully.
+c Done.
+   Problem1_77_k100.dimacs with traditional MapleCOMSPS solver......
+c filename ./Problem1_77_k100.dimacs
+c ltl=reactivity, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(reactivity)
+c used protection: None.
+c [48.75] c Winner: 0
+c TIME SOLVING : 46.6054
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      18020 |     18792809 |         63 |    1881918 |     951 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 47.9718
+c Run BSaLTic done successfully.
+c Done.
+...Run LTL persistence instances.
+
+   mmgt20_recurrence_0.smv_k100.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./mmgt20_recurrence_0.smv_k100.dimacs
+c ltl=persistence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(persistence)
+c used protection: Explicit storage.
+c [45.93] c Winner: 0
+c TIME SOLVING : 45.3474
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      85460 |     96235913 |        254 |    2375836 |     532 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 45.7793
+c Run BSaLTic done successfully.
+c Done.
+   mmgt20_recurrence_0.smv_k100.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./mmgt20_recurrence_0.smv_k100.dimacs
+c ltl=persistence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(persistence)
+c used protection: Database Reduction.
+c [80.69] c Winner: 0
+c TIME SOLVING : 80.0952
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     165917 |    185807076 |        445 |    4488197 |     580 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 80.5015
+c Run BSaLTic done successfully.
+c Done.
+   mmgt20_recurrence_0.smv_k100.dimacs with traditional MapleCOMSPS solver......
+c filename ./mmgt20_recurrence_0.smv_k100.dimacs
+c ltl=persistence, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(persistence)
+c used protection: None.
+c [90.71] c Winner: 0
+c TIME SOLVING : 90.1018
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     187115 |    219144774 |        509 |    5207573 |     581 |
+s SATISFIABLE
+c TOTAL RESOLUTION TIME : 90.5033
+c Run BSaLTic done successfully.
+c Done.
+   base_k1000.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./base_k1000.dimacs
+c ltl=persistence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(persistence)
+c used protection: Explicit storage.
+c [29.36] c Winner: 0
+c TIME SOLVING : 28.7816
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      38907 |     26389196 |        127 |     504469 |     430 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 29.1907
+c Run BSaLTic done successfully.
+c Done.
+   base_k1000.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./base_k1000.dimacs
+c ltl=persistence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(persistence)
+c used protection: Database Reduction.
+c [27.88] c Winner: 0
+c TIME SOLVING : 27.3145
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      35157 |     21253407 |        125 |     493538 |     430 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 27.7198
+c Run BSaLTic done successfully.
+c Done.
+   base_k1000.dimacs with traditional MapleCOMSPS solver......
+c filename ./base_k1000.dimacs
+c ltl=persistence, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(persistence)
+c used protection: None.
+c [29.52] c Winner: 0
+c TIME SOLVING : 28.9746
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |      41089 |     24830451 |        127 |     541283 |     430 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 29.3604
+c Run BSaLTic done successfully.
+c Done.
+   pci_k200.dimacs with Frequency-based Heuristic Hf  - Explicit protection
+c filename ./pci_k200.dimacs
+c ltl=persistence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=e, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(persistence)
+c used protection: Explicit storage.
+c [99.54] c Winner: 0
+c TIME SOLVING : 99.405
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     528456 |    190653363 |       1085 |    1898493 |     339 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 99.4924
+c Run BSaLTic done successfully.
+c Done.
+   pci_k200.dimacs with Frequency-based Heuristic Hf - Database reduction
+c filename ./pci_k200.dimacs
+c ltl=persistence, max-memory=5, no-model, o=./results/demo/compare.csv, protect=dr, r=4, selector=hf, t=600, 
+c used selector: hf.
+c LTL property not(persistence)
+c used protection: Database Reduction.
+c [78.62] c Winner: 0
+c TIME SOLVING : 78.4983
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     425501 |    152846255 |       1021 |    1594265 |     352 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 78.5858
+c Run BSaLTic done successfully.
+c Done.
+   pci_k200.dimacs with traditional MapleCOMSPS solver......
+c filename ./pci_k200.dimacs
+c ltl=persistence, max-memory=5, no-model, o=./results/demo/compare.csv, t=600, 
+c used selector: none.
+c LTL property not(persistence)
+c used protection: None.
+c [125.92] c Winner: 0
+c TIME SOLVING : 125.791
+c | ID | conflicts  | propagations |  restarts  | decisions  | memPeak |
+c |  0 |     552390 |    214662999 |       1150 |    1954323 |     296 |
+s UNSATISFIABLE
+c TOTAL RESOLUTION TIME : 125.873
+c Run BSaLTic done successfully.
+c Done.
+##############################################################
+##############        RESUME EXPERIMENTS        ##############   
+##############################################################
+
+Solver Configuration
+Solver  BSaLTic-DHf
+Solver  BSaLTic-EHf
+Solver  MapleCOMSPS
++----+-------------+---------+-------+--------------+-----------+----------+-----------+--------+------------+
+|    | Solvers     |   UNSAT |   SAT |   TOTAL (17) |   TIMEOUT |   MEMORY |   UNKNOWN |   PAR2 |   CTI (16) |
+|----+-------------+---------+-------+--------------+-----------+----------+-----------+--------+------------|
+|  0 | BSaLTic-DHf |       7 |     9 |           16 |         1 |        0 |         0 |   2547 |       1347 |
+|  1 | BSaLTic-EHf |       7 |     9 |           16 |         1 |        0 |         0 |   2340 |       1140 |
+|  2 | MapleCOMSPS |       7 |     9 |           16 |         1 |        0 |         0 |   2711 |       1511 |
++----+-------------+---------+-------+--------------+-----------+----------+-----------+--------+------------+
+Problem1_77_k100.dimacs
+adding.1_obligation_0.smv_k80.dimacs
+base_k1000.dimacs
+bopdp.1.1_k60.dimacs
+bopdp.2_k60.dimacs
+bridge.2_k1600.dimacs
+dme2_persistence_0.smv_k400.dimacs
+dpd75_obligation_0.smv_k100.dimacs
+dph35_persistence_0.smv_k40.dimacs
+gigamax_reactivity_0.smv_k80.dimacs
+krebs.3_guarantee_0.smv_k80.dimacs
+mmgt20_recurrence_0.smv_k100.dimacs
+msmie.3_reactivity_0.smv_k80.dimacs
+pci_k200.dimacs
+prod-cons_neg.smv_k800.dimacs
+queue_obligation_0.smv_k400.dimacs
+schedule_world.1_neg.smv_k200.dimacs
+Problem1_77_k100.dimacs
+adding.1_obligation_0.smv_k80.dimacs
+base_k1000.dimacs
+bopdp.1.1_k60.dimacs
+bopdp.2_k60.dimacs
+bridge.2_k1600.dimacs
+dme2_persistence_0.smv_k400.dimacs
+dpd75_obligation_0.smv_k100.dimacs
+dph35_persistence_0.smv_k40.dimacs
+gigamax_reactivity_0.smv_k80.dimacs
+krebs.3_guarantee_0.smv_k80.dimacs
+mmgt20_recurrence_0.smv_k100.dimacs
+msmie.3_reactivity_0.smv_k80.dimacs
+pci_k200.dimacs
+prod-cons_neg.smv_k800.dimacs
+queue_obligation_0.smv_k400.dimacs
+schedule_world.1_neg.smv_k200.dimacs
+done.
+

@@ -1,0 +1,17 @@
+The main purpose of this artifact is to distributes the sources
+of the development versions of the tools used in the paper.
+These sources are in directory sources/
+
+- BSaLTic is licensed under GPL v3.
+
+Many additional tools are used in our benchmarks:
+  - Spot is licensed under GPLv3+.
+  - The NuSMV framework is licensed under LGPL v2.1.
+  - The PaInleSS SAT-solver (also in sources/) is licensed under GPLv2.
+  - The Gurobi Optimization has a private license (OPTIONAL).
+  - The Debian packages in packages/ contain various free software distributed under individual OSS-approved licenses.
+    Each of these packages includes its own license.
+
+Finally the scripts and configuration files used to run our
+experiments, as well as the generated CSV files and plots, are all
+released into the public domain.

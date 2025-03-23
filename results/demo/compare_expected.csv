@@ -1,0 +1,52 @@
+Solver Configuration,LTL,Instance,Result Code,Wall Time
+BSaLTic-EHf,safety,krebs.3_guarantee_0.smv_k80.dimacs,wall clock limit exceeded,601.133
+BSaLTic-DHf,safety,krebs.3_guarantee_0.smv_k80.dimacs,wall clock limit exceeded,611.582
+MapleCOMSPS,safety,krebs.3_guarantee_0.smv_k80.dimacs,wall clock limit exceeded,628.973
+BSaLTic-EHf,safety,bridge.2_k1600.dimacs,UNSAT,353.413
+BSaLTic-DHf,safety,bridge.2_k1600.dimacs,UNSAT,340.64
+MapleCOMSPS,safety,bridge.2_k1600.dimacs,UNSAT,464.597
+BSaLTic-EHf,guarantee,bopdp.2_k60.dimacs,UNSAT,21.3095
+BSaLTic-DHf,guarantee,bopdp.2_k60.dimacs,UNSAT,24.6652
+MapleCOMSPS,guarantee,bopdp.2_k60.dimacs,UNSAT,46.3005
+BSaLTic-EHf,guarantee,bopdp.1.1_k60.dimacs,UNSAT,32.5182
+BSaLTic-DHf,guarantee,bopdp.1.1_k60.dimacs,UNSAT,44.5462
+MapleCOMSPS,guarantee,bopdp.1.1_k60.dimacs,UNSAT,33.2172
+BSaLTic-EHf,guarantee,schedule_world.1_neg.smv_k200.dimacs,SAT,35.147
+BSaLTic-DHf,guarantee,schedule_world.1_neg.smv_k200.dimacs,SAT,14.6041
+MapleCOMSPS,guarantee,schedule_world.1_neg.smv_k200.dimacs,SAT,96.8408
+BSaLTic-EHf,obligation,adding.1_obligation_0.smv_k80.dimacs,UNSAT,156.518
+BSaLTic-DHf,obligation,adding.1_obligation_0.smv_k80.dimacs,UNSAT,200.806
+MapleCOMSPS,obligation,adding.1_obligation_0.smv_k80.dimacs,UNSAT,230.455
+BSaLTic-EHf,obligation,dpd75_obligation_0.smv_k100.dimacs,SAT,22.3702
+BSaLTic-DHf,obligation,dpd75_obligation_0.smv_k100.dimacs,SAT,59.8987
+MapleCOMSPS,obligation,dpd75_obligation_0.smv_k100.dimacs,SAT,47.4721
+BSaLTic-EHf,obligation,queue_obligation_0.smv_k400.dimacs,SAT,79.187
+BSaLTic-DHf,obligation,queue_obligation_0.smv_k400.dimacs,SAT,81.4713
+MapleCOMSPS,obligation,queue_obligation_0.smv_k400.dimacs,SAT,16.0445
+BSaLTic-EHf,recurrence,dme2_persistence_0.smv_k400.dimacs,SAT,26.0206
+BSaLTic-DHf,recurrence,dme2_persistence_0.smv_k400.dimacs,SAT,50.1073
+MapleCOMSPS,recurrence,dme2_persistence_0.smv_k400.dimacs,SAT,33.4186
+BSaLTic-EHf,recurrence,dph35_persistence_0.smv_k40.dimacs,SAT,38.0007
+BSaLTic-DHf,recurrence,dph35_persistence_0.smv_k40.dimacs,SAT,163.741
+MapleCOMSPS,recurrence,dph35_persistence_0.smv_k40.dimacs,SAT,78.6735
+BSaLTic-EHf,recurrence,prod-cons_neg.smv_k800.dimacs,SAT,34.1986
+BSaLTic-DHf,recurrence,prod-cons_neg.smv_k800.dimacs,SAT,44.9892
+MapleCOMSPS,recurrence,prod-cons_neg.smv_k800.dimacs,SAT,32.6689
+BSaLTic-EHf,reactivity,msmie.3_reactivity_0.smv_k80.dimacs,SAT,52.5491
+BSaLTic-DHf,reactivity,msmie.3_reactivity_0.smv_k80.dimacs,SAT,20.6853
+MapleCOMSPS,reactivity,msmie.3_reactivity_0.smv_k80.dimacs,SAT,72.2324
+BSaLTic-EHf,reactivity,gigamax_reactivity_0.smv_k80.dimacs,SAT,64.7043
+BSaLTic-DHf,reactivity,gigamax_reactivity_0.smv_k80.dimacs,SAT,65.6334
+MapleCOMSPS,reactivity,gigamax_reactivity_0.smv_k80.dimacs,SAT,65.7149
+BSaLTic-EHf,reactivity,Problem1_77_k100.dimacs,UNSAT,49.1454
+BSaLTic-DHf,reactivity,Problem1_77_k100.dimacs,UNSAT,48.4893
+MapleCOMSPS,reactivity,Problem1_77_k100.dimacs,UNSAT,47.9718
+BSaLTic-EHf,persistence,mmgt20_recurrence_0.smv_k100.dimacs,SAT,45.7793
+BSaLTic-DHf,persistence,mmgt20_recurrence_0.smv_k100.dimacs,SAT,80.5015
+MapleCOMSPS,persistence,mmgt20_recurrence_0.smv_k100.dimacs,SAT,90.5033
+BSaLTic-EHf,persistence,base_k1000.dimacs,UNSAT,29.1907
+BSaLTic-DHf,persistence,base_k1000.dimacs,UNSAT,27.7198
+MapleCOMSPS,persistence,base_k1000.dimacs,UNSAT,29.3604
+BSaLTic-EHf,persistence,pci_k200.dimacs,UNSAT,99.4924
+BSaLTic-DHf,persistence,pci_k200.dimacs,UNSAT,78.5858
+MapleCOMSPS,persistence,pci_k200.dimacs,UNSAT,125.873

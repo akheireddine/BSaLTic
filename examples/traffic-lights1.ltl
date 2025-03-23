@@ -1,0 +1,1 @@
+G ("emergency=NS" -> F("EWPedestrian.current_walk_light = Dont_Walk" & "NSPedestrian.current_walk_light = Dont_Walk"))
